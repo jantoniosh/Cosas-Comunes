@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+$naranja: #ff6961;
+
+body {
+  margin: 0;
+  background-color: #f5f5dc;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  margin: 0px;
+  padding: 21px;
+}
+
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+}
+
+a,
+a:visited {
+  color: black;
+  transition: color 0.5s;
+}
+
+a:hover {
+  color: $naranja;
+  transition: color 0.5s;
+}
+
+.info {
+  border-radius: 9px;
+  padding-left: 9px;
+  padding-right: 9px;
+  transition: color 0.5s;
+  h2 {
+    text-decoration: underline;
+  }
+}
+
+.info:hover {
+  cursor: pointer;
+  color: $naranja;
+  transition: color 0.5s;
+}
+
+#piezas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pieza,
+.info {
+  width: fit-content;
+  h2 {
+    margin-top: 9px;
+    margin-bottom: 9px;
+  }
+}
+
+.fondo {
+  // background-image: url("../fondos/fondo.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: background-image 0.2s ease-in-out;
+}
